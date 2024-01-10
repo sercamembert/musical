@@ -5,7 +5,7 @@
 
 @layer base {
   .padding {
-    @apply px-[20px] sm:px-[50px] md:px-[90px] lg:px-[130px] xl:px-[180px] 2xl:px-[220px] 3xl:px-[240px] desktop:px-[270px];
+    @apply px-[20px] sm:px-[50px] md:px-[90px] lg:px-[130px] xl:px-[180px] 2xl:px-[220px] 3xl:px-[240px] desktop:px-[270px] min-[2200px]:px-[350px];
   }
 
   .button-animation {
