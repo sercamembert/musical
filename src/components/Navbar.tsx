@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Squash as Hamburger } from "hamburger-react";
@@ -10,10 +10,25 @@ const variants = {
 };
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 30);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <motion.div
-        className="fixed w-screen h-full top-[80px] bg-black padding text-[40px] flex flex-col gap-10 md:hidden z-50"
+        className="fixed w-screen h-full top-[80px] bg-black padding text-[40px] flex flex-col gap-10 md:hidden z-50 "
         animate={isOpen ? "open" : "closed"}
         transition={{ duration: 0.5 }}
         variants={variants}
@@ -57,7 +72,13 @@ const Navbar = () => {
         </Link>
       </motion.div>
 
-      <nav className="w-full padding h-[80px] fixed top-0 flex items-center justify-between xl:h-[100px] bg-black md:bg-none z-50">
+      <nav
+        className={`w-full padding h-[80px] ${
+          isOpen && "bg-black"
+        } fixed top-0 flex items-center justify-between xl:h-[100px] bg-none md:bg-none z-50 ${
+          isScrolled && "bg-black" // Apply a different background color when scrolled
+        }`}
+      >
         <h1>Logo</h1>
 
         <div className="md:hidden">
@@ -89,9 +110,9 @@ const Navbar = () => {
             className="md:ml-[31px] lg:ml-[40px] xl:ml-[57px] 2xl:ml-[60px]"
           >
             <button
-              className="bg-secoundary text-button-text rounded-[10px] xl:rounded-[15px]  h-[24px]  lg:h-[30px]  xl:h-[39.31px]  2xl:h-[45px]  desktop:h-[53px]
+              className="bg-secoundary text-button-text rounded-[5px] xl:rounded-[10px]  h-[24px]  lg:h-[30px]  xl:h-[39.31px]  2xl:h-[45px]  desktop:h-[53px]
               font-semibold text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] px-3 xl:px-6 
-              hover:brightness-[80%] hover:scale-110 duration-300"
+              button-animation"
             >
               Wydarzenia
             </button>

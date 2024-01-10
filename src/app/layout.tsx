@@ -19,7 +19,8 @@ export default function RootLayout({
     <html lang="pl">
       <body
         className={
-          inter.className + " bg-black text-white scroll-smooth w-screen"
+          inter.className +
+          " bg-black w-screen overflow-x-hidden scroll-smooth font-primary text-white"
         }
       >
         <Navbar />

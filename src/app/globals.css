@@ -7,4 +7,8 @@
   .padding {
     @apply px-[20px] sm:px-[50px] md:px-[90px] lg:px-[130px] xl:px-[180px] 2xl:px-[220px] 3xl:px-[240px] desktop:px-[270px];
   }
+
+  .button-animation {
+    @apply hover:brightness-[75%] hover:scale-110 duration-300;
+  }
 }
