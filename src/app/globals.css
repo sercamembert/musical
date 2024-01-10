@@ -19,3 +19,11 @@
     @apply gap-y-[35px] md:gap-y-[10px] lg:gap-y-[15px] xl:gap-y-[18px];
   }
 }
+
+.blur {
+  filter: blur(2.3888890743255615px);
+}
+
+.no-blur {
+  filter: blur(0px);
+}
