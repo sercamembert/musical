@@ -11,4 +11,11 @@
   .button-animation {
     @apply hover:brightness-[75%] hover:scale-110 duration-300;
   }
+
+  .section-heading {
+    @apply font-bold text-[31px] md:text-[34.1px] lg:text-[44px] xl:text-[55px] 2xl:text-[57px] 3xl:text-[61px] desktop:text-[68px];
+  }
+  .setion-space {
+    @apply gap-y-[35px] md:gap-y-[10px] lg:gap-y-[15px] xl:gap-y-[18px];
+  }
 }

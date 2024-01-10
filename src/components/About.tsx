@@ -6,10 +6,8 @@ const About = () => {
   return (
     <div className="padding my-[35px] lg:my-[50px] xl:my-[62px] 2xl:my-[82px] 3xl:my-[90px] desktop:my-[100px] flex gap-[31px] lg:gap-[41px] xl:gap-[51px] 2xl:gap-[53px] 3xl:gap-[56px] desktop:gap-[63px]">
       <div className="flex flex-col w-full">
-        <h2 className="font-bold text-[31px] md:text-[34.1px] lg:text-[44px] xl:text-[55px] 2xl:text-[57px] 3xl:text-[61px] desktop:text-[68px]">
-          O Projekcie
-        </h2>
-        <p className="font-semibold text-[12px] md:text-[9.93px] lg:text-[12.97px] xl:text-[16.21px] 3xl:text-[17.83px] desktop:text-[20px]">
+        <h2 className="section-heading leading-none">O Projekcie</h2>
+        <p className="font-medium text-[12px] md:text-[9.93px] lg:text-[12.97px] xl:text-[16.21px] 3xl:text-[17.83px] desktop:text-[20px] mt-[10px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -32,7 +30,7 @@ const About = () => {
         alt="Złote głosy musicalu"
         width={700}
         height={466.19}
-        className="hidden md:block w-[250.16px] lg:w-[326.74px] xl:w-[408.42px] 2xl:w-[425.44px] 3xl:w-[450px] desktop:w-[500px]"
+        className="hidden md:block w-[250.16px] lg:w-[42%]"
       />
     </div>
   );
