@@ -14,7 +14,7 @@ module.exports = {
         "2xl": "1440px",
         "3xl": "1536px",
         desktop: "1720px",
-        ultra: "2000px",
+        ultra: "2560px",
       },
       colors: {
         primary: "#FBC403",

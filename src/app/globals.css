@@ -5,7 +5,7 @@
 
 @layer base {
   .padding {
-    @apply px-[20px] sm:px-[50px] md:px-[90px] lg:px-[130px] xl:px-[180px] 2xl:px-[220px] 3xl:px-[240px] desktop:px-[270px] min-[2200px]:px-[400px];
+    @apply px-[20px] sm:px-[50px] md:px-[90px] lg:px-[130px] xl:px-[180px] 2xl:px-[220px] 3xl:px-[240px] desktop:px-[270px] ultra:px-[400px];
   }
 
   .button-animation {
@@ -13,10 +13,10 @@
   }
 
   .section-heading {
-    @apply font-bold text-[31px] md:text-[34.1px] lg:text-[44px] xl:text-[55px] 2xl:text-[57px] 3xl:text-[61px] desktop:text-[68px];
+    @apply font-bold text-[31px] md:text-[34.1px] lg:text-[44px] xl:text-[55px] 2xl:text-[57px] 3xl:text-[61px] desktop:text-[68px] ultra:text-[101px];
   }
   .setion-space {
-    @apply gap-y-[35px] md:gap-y-[10px] lg:gap-y-[15px] xl:gap-y-[18px];
+    @apply gap-y-[35px] md:gap-y-[10px] lg:gap-y-[15px] xl:gap-y-[18px] ultra:gap-y-[25px];
   }
 }
 
