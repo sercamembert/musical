@@ -9,7 +9,7 @@ const Artists = async () => {
   const events = await getEvents();
 
   return (
-    <div className="section-space flex flex-col relative">
+    <div className="section-space flex flex-col relative mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]">
       <h2 className="text-[25px] font-bold md:section-heading text-center">
         Najbliższe wydarzenia
       </h2>

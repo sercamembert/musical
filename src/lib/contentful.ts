@@ -22,4 +22,12 @@ export const getHomeArtists = async () => {
   return response.items;
 };
 
+export const getHomeGallery = async () => {
+  const response = await client.getEntries({
+    content_type: "galeriaHome",
+  });
+
+  return response.items;
+};
+
 export default getEvents;
