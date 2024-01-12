@@ -20,6 +20,7 @@ module.exports = {
         primary: "#FBC403",
         secoundary: "#FBFCD4",
         "button-text": "#535347",
+        footer: "#FFFCF9",
       },
       fontFamily: {
         heading: ["Playfair Display", "serif"],

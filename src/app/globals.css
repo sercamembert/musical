@@ -18,6 +18,10 @@
   .section-space {
     @apply gap-y-[21px] md:gap-y-[10px] lg:gap-y-[15px] xl:gap-y-[18px] ultra:gap-y-[25px];
   }
+
+  .footer-text {
+    @apply opacity-90 leading-tight text-[11px] md:text-[10px] lg:text-[13px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[19px] desktop:text-[22px] ultra:text-[32px];
+  }
 }
 
 .blur {

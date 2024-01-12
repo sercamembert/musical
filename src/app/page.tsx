@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Artists from "@/components/artists/Artists";
 import Events from "@/components/events/Events";
+import Footer from "@/components/Footer";
 export default async function Home() {
   const page = await client.getEntry("2bWaTxKFZq5xHHICUol06i");
   const { test, image, media } = page.fields;
@@ -24,6 +25,7 @@ export default async function Home() {
         <Events />
       </div>
       <Gallery />
+      <Footer />
     </main>
   );
 }
