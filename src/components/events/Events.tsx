@@ -21,6 +21,7 @@ const Artists = async () => {
         >
           {events.map((event) => (
             <EventBlock
+              // @ts-expect-error
               path={"https:" + event.fields.image?.fields.file?.url}
               location={event.fields.location}
               subLocation={event.fields.sublocation}
