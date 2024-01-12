@@ -13,4 +13,13 @@ const getEvents = async () => {
   return response.items;
 };
 
+export const getHomeArtists = async () => {
+  const response = await client.getEntries({
+    content_type: "artists",
+    limit: 3,
+  });
+
+  return response.items;
+};
+
 export default getEvents;

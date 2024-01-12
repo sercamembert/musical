@@ -10,7 +10,7 @@ const Artists = async () => {
 
   return (
     <div className="section-space flex flex-col relative">
-      <h2 className="text-[25px] section-heading text-center">
+      <h2 className="text-[25px] font-bold md:section-heading text-center">
         Najbliższe wydarzenia
       </h2>
       <EventScroll>
@@ -32,7 +32,7 @@ const Artists = async () => {
         </div>
         <p
           className="hidden md:block text-center text-[11px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px]
-      mt-[20px] lg:mt-[23px] xl:mt-[28px] ultra:mt-[35px]"
+          mt-[20px] lg:mt-[23px] xl:mt-[28px] ultra:mt-[35px] opacity-70"
         >
           Kliknij w wybrane wydarzenie aby zobaczyć więcej szczegółów
         </p>

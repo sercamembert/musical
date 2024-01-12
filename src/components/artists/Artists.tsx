@@ -1,9 +1,11 @@
 import React from "react";
 import ArtistBlock from "./ArtistBlock";
+import { getHomeArtists } from "@/lib/contentful";
 
 interface Props {}
 
-const Artists = () => {
+const Artists = async () => {
+  const artists = await getHomeArtists();
   return (
     <div className="padding flex flex-col section-space mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]">
       <h2 className="section-heading text-center">Artyści</h2>
@@ -11,21 +13,15 @@ const Artists = () => {
         className="mx-auto w-full grid grid-cols-1 md:grid-cols-3 max-w-[250px] md:max-w-full
         gap-y-[40px] md:gap-x-[62px] lg:gap-x-[81px] xl:gap-x-[101px] 2xl:gap-x-[106px] desktop:gap-x-[124px] ultra:gap-x-[185px]"
       >
-        <ArtistBlock
-          path="/images/artists/artist1.png"
-          name="Playboi Carti"
-          role="Vamp"
-        />
-        <ArtistBlock
-          path="/images/artists/artist2.png"
-          name="Destroy Lonely"
-          role="Vamp"
-        />
-        <ArtistBlock
-          path="/images/artists/artist3.png"
-          name="Ken Carson"
-          role="Vamp"
-        />
+        {artists.map((artist) => (
+          <ArtistBlock
+            // @ts-expect-error
+            path={"https:" + artist.fields.image?.fields.file?.url}
+            name={artist.fields.name}
+            role={artist.fields.role}
+            role2={artist.fields.role2}
+          />
+        ))}
       </div>
       <button
         className="bg-secoundary text-button-text rounded-[3px] xl:rounded-[5px] 3xl:rounded-[9px] h-[30.58px] md:h-[22.73px] lg:h-[28.98px] xl:h-[36px] 3xl:h-[39.84px] desktop:h-[44.61px] ultra:h-[66.17px]

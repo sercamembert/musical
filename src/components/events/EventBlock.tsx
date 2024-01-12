@@ -29,12 +29,12 @@ const ArtistBlock = ({ path, location, subLocation, date, entryId }: Props) => {
           <h3 className="font-semibold text-[17px] md:text-[14px] lg:text-[18px] xl:text-[23px] 3xl:text-[25px] desktop:text-[28px] ultra:text-[42.67px]">
             {location}
           </h3>
-          <p className=" text-[12px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px]">
+          <p className=" text-[12px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px] opacity-70">
             {date}
           </p>
         </div>
 
-        <p className="text-[11px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px]">
+        <p className="text-[11px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px] opacity-70">
           {subLocation}
         </p>
       </div>
