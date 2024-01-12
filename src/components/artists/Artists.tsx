@@ -5,7 +5,7 @@ interface Props {}
 
 const Artists = () => {
   return (
-    <div className="padding flex flex-col setion-space mb-[100px]">
+    <div className="padding flex flex-col section-space mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]">
       <h2 className="section-heading text-center">Artyści</h2>
       <div
         className="mx-auto w-full grid grid-cols-1 md:grid-cols-3 max-w-[250px] md:max-w-full

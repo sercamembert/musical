@@ -4,7 +4,10 @@ interface Props {}
 
 const About = () => {
   return (
-    <div className="padding my-[35px] lg:my-[50px] xl:my-[62px] 2xl:my-[82px] 3xl:my-[90px] desktop:my-[100px] flex gap-[31px] lg:gap-[41px] xl:gap-[51px] 2xl:gap-[53px] 3xl:gap-[56px] desktop:gap-[63px] ultra:gap-[80px]">
+    <div
+      className="padding flex gap-[31px] lg:gap-[41px] xl:gap-[51px] 2xl:gap-[53px] 3xl:gap-[56px] desktop:gap-[63px] ultra:gap-[80px]
+    mt-[135px] mb-[81px] md:mt-0 md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]"
+    >
       <div className="flex flex-col w-full">
         <h2 className="section-heading leading-none">O Projekcie</h2>
         <p className="font-medium text-[12px] md:text-[9.93px] lg:text-[12.97px] xl:text-[16.21px] 3xl:text-[17.83px] desktop:text-[20px] ultra:text-[29px] mt-[10px]">

@@ -8,6 +8,7 @@ const Hero = () => {
       className="w-full padding  bg-center bg-cover flex flex-col items-center
     min-h-[300px] md:min-h-[400px] lg:min-h-[507.02px] xl:min-h-[640px] 2xl:min-h-[713px] 3xl:min-h-[760px] ultra:min-h-[1150px]
     relative pt-[80px] lg:pt-[100px] xl:pt-[150px] 2xl:pt-[170px] desktop:pt-[190px] ultra:pt-[240px]
+    mb-[15px] md:mb-[35px] lg:mb-[50px] xl:mb-[62px] 2xl:mb-[82px] desktop:mb-[100px] ultra:mb-[148px]
     "
     >
       <Image
@@ -31,8 +32,8 @@ const Hero = () => {
         Musicalu
       </p>
       <p
-        className="font-medium text-center text-[12px] md:text-[10.27px] lg:text-[13.69px] xl:text-[17.11px] 2xl:text-[19.25px] 3xl:text-[20.54px] desktop:text-[23px]
-        mt-[10px]  z-[1] ultra:text-[34px]
+        className="text-center text-[12px] md:text-[10.27px] lg:text-[13.69px] xl:text-[17.11px] 2xl:text-[19.25px] 3xl:text-[20.54px] desktop:text-[23px]
+        mt-[10px] z-[1] ultra:text-[34px] opacity-90
       "
       >
         Nasze Koncerty w Operach - Sztuka Wzniosła, Dźwięki Niezwykłe: Zanurz

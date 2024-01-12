@@ -15,7 +15,7 @@ const EventScroll = ({ children }: any) => {
   return (
     <div
       ref={scrollContainerRef}
-      className="padding flex flex-col mb-[100px] overflow-x-auto  md:overflow-x-hidden "
+      className="padding flex flex-col overflow-x-auto  md:overflow-x-hidden "
     >
       {children}
     </div>
