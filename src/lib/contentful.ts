@@ -1,6 +1,16 @@
 import { createClient } from "contentful";
 
 export const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID || "", // ID of a Compose-compatible space to be used \
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "", // delivery API key for the space \
+  space: process.env.CONTENTFUL_SPACE_ID || "",
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || "",
 });
+
+const getEvents = async () => {
+  const response = await client.getEntries({
+    content_type: "eventsHome",
+  });
+
+  return response.items;
+};
+
+export default getEvents;

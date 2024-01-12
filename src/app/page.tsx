@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Artists from "@/components/artists/Artists";
+import Events from "@/components/events/Events";
 export default async function Home() {
   const page = await client.getEntry("2bWaTxKFZq5xHHICUol06i");
   const { test, image, media } = page.fields;
@@ -14,8 +15,14 @@ export default async function Home() {
   return (
     <main className="flex flex-col w-full">
       <Hero />
+      <div className="md:hidden">
+        <Events />
+      </div>
       <About />
       <Artists />
+      <div className="hidden md:block">
+        <Events />
+      </div>
     </main>
   );
 }
