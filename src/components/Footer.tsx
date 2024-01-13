@@ -8,7 +8,7 @@ interface Props {}
 const Footer = () => {
   return (
     <div
-      className=" w-full text-white border-t border-[#333333] min-h-[300px] md:min-h-[265px] lg:min-h-[350px] xl:min-h-[430px] 2xl:min-h-[490px] 3xl:min-h-[529px] ultra:min-w-[850px]
+      className=" mt-[57px] md:mt-[74px] lg:mt-[104px] xl:mt-[130px] 3xl:mt-[140px] desktop:mt-[160px] ultra:mt-[240px] w-full text-white border-t border-[#333333] min-h-[300px] md:min-h-[265px] lg:min-h-[350px] xl:min-h-[430px] 2xl:min-h-[490px] 3xl:min-h-[529px] ultra:min-w-[850px]
     pt-[66px] md:pt-[80px] lg:pt-[107px] xl:pt-[134px] 2xl:pt-[151px] 3xl:pt-[161px] desktop:pt-[180px] ultra:pt-[267px]
     "
     >

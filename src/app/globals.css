@@ -22,6 +22,10 @@
   .footer-text {
     @apply opacity-90 leading-tight text-[11px] md:text-[10px] lg:text-[13px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[19px] desktop:text-[22px] ultra:text-[32px];
   }
+
+  .event-heading {
+    @apply text-center font-semibold text-[18px] md:text-[25px] lg:text-[33.26px] xl:text-[41.57px] 2xl:text-[46.77px] 3xl:text-[49.89px] desktop:text-[55.86px] ultra:text-[83.15px];
+  }
 }
 
 .blur {

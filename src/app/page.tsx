@@ -17,15 +17,14 @@ export default async function Home() {
     <main className="flex flex-col w-full">
       <Hero />
       <div className="md:hidden">
-        <Events />
+        <Events text="Najbliższe wydarzenia" />
       </div>
       <About />
       <Artists />
       <div className="hidden md:block">
-        <Events />
+        <Events text="Najbliższe wydarzenia" />
       </div>
       <Gallery />
-      <Footer />
     </main>
   );
 }

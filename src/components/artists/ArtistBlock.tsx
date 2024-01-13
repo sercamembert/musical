@@ -17,7 +17,7 @@ const ArtistBlock = ({ path, name, role, role2 }: Props) => {
         alt="Artysta"
         width={500}
         height={500}
-        className="w-full rounded-[9.14px] md:rounded-[5.86px] lg:rounded-[7.58px] xl:rounded-[10px] 3xl:rounded-[12px]"
+        className="w-full rounded-[9.14px] md:rounded-[5.86px] lg:rounded-[7.58px] xl:rounded-[10px] 3xl:rounded-[12px] aspect-square"
         quality={100}
       />
       <div>

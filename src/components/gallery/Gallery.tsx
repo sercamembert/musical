@@ -5,7 +5,7 @@ import GalleryLink from "./GalleryLink";
 const Gallery = async () => {
   const galleryLinks = await getHomeGallery();
   return (
-    <div className="padding section-space flex flex-col relative mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]">
+    <div className="padding section-space flex flex-col relative">
       <div>
         <h2 className="section-heading text-left leading-tight">Galeria</h2>
         <p

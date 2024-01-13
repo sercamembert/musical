@@ -13,7 +13,7 @@ interface Props {
 const ArtistBlock = ({ path, location, subLocation, date, entryId }: Props) => {
   return (
     <Link
-      href={`/event/${entryId}`}
+      href={`/wydarzenia/${entryId}`}
       className="flex flex-col w-full gap-y-[8px] 2xl:gap-y-[10px] ultra:gap-y-[20px] hover:brightness-75 duration-300 "
     >
       <Image

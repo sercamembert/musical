@@ -8,6 +8,15 @@ export const client = createClient({
 const getEvents = async () => {
   const response = await client.getEntries({
     content_type: "eventsHome",
+    limit: 3,
+  });
+
+  return response.items;
+};
+
+export const getAllEvents = async () => {
+  const response = await client.getEntries({
+    content_type: "eventsHome",
   });
 
   return response.items;
