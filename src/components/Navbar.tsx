@@ -35,7 +35,7 @@ const Navbar = () => {
         initial={{ x: 800 }}
       >
         <Link
-          href=""
+          href="/onas"
           className="font-bold"
           onClick={() => {
             setIsOpen(false);
@@ -44,7 +44,7 @@ const Navbar = () => {
           O Projekcie
         </Link>
         <Link
-          href=""
+          href="/#galeria"
           className="font-bold"
           onClick={() => {
             setIsOpen(false);
@@ -53,7 +53,7 @@ const Navbar = () => {
           Galeria
         </Link>
         <Link
-          href=""
+          href="/artysci"
           className="font-bold"
           onClick={() => {
             setIsOpen(false);
@@ -62,7 +62,7 @@ const Navbar = () => {
           Artyści
         </Link>
         <Link
-          href=""
+          href="/wydarzenia"
           className="font-bold cursor-pointer"
           onClick={() => {
             setIsOpen(false);
@@ -76,10 +76,10 @@ const Navbar = () => {
         className={`w-full padding h-[80px] ${
           isOpen && "bg-black"
         } fixed top-0 flex items-center justify-between xl:h-[100px] bg-none md:bg-none z-50 ${
-          isScrolled && "bg-black" // Apply a different background color when scrolled
+          isScrolled && "bg-black"
         }`}
       >
-        <h1>Logo</h1>
+        <a href="/">Logo</a>
 
         <div className="md:hidden">
           <Hamburger toggled={isOpen} size={17} toggle={setIsOpen} />
@@ -87,26 +87,26 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center">
           <Link
-            href=""
+            href="/onas"
             className="font-medium text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] hover:text-primary duration-500 "
           >
             O Projekcie
           </Link>
           <Link
-            href=""
+            href="/#galeria"
             className="font-medium text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] mx-[38px] lg:mx-[49px] xl:mx-[62px] 2xl:mx-[72px] desktop:mx-[85px] hover:text-primary duration-500"
           >
             Galeria
           </Link>
           <Link
-            href=""
+            href="/artysci"
             className="cursor-pointer font-medium text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] hover:text-primary duration-500"
           >
             Artyści
           </Link>
 
           <Link
-            href=""
+            href="/wydarzenia"
             className="md:ml-[31px] lg:ml-[40px] xl:ml-[57px] 2xl:ml-[60px]"
           >
             <button

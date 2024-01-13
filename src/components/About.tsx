@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 interface Props {}
 
 const About = () => {
@@ -19,14 +20,16 @@ const About = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <button
-          className="bg-secoundary text-button-text rounded-[5px] xl:rounded-[7px] 3xl:rounded-[9px] 
+        <Link href="/onas">
+          <button
+            className="bg-secoundary text-button-text rounded-[5px] xl:rounded-[7px] 3xl:rounded-[9px] 
           h-[30.58px] md:h-[23.73px] lg:h-[30.98px] xl:h-[37.22px] 2xl:h-[39px] 3xl:h-[41px] desktop:h-[46.11px] ultra:h-[69.23px]
           font-semibold text-[11px] md:text-[8px] lg:text-[10px] xl:text-[13.62px] desktop:text-[15px] ultra:text-[23px] px-3 xl:px-6
           w-[47%] md:w-[40%] mt-[15px] md:mt-[13px] lg:mt-[16px] xl:mt-[21px] button-animation cursor-pointer"
-        >
-          Dowiedz się więcej
-        </button>
+          >
+            Dowiedz się więcej
+          </button>
+        </Link>
       </div>
       <Image
         src="/images/about/image.png"

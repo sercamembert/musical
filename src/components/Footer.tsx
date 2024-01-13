@@ -42,10 +42,10 @@ const Footer = () => {
         
         "
           >
-            <Link href="">Artyści</Link>
-            <Link href="">Wydarzenia</Link>
-            <Link href="">O projekcie</Link>
-            <Link href="">Galeria</Link>
+            <Link href="/artysci">Artyści</Link>
+            <Link href="/wydarzenia">Wydarzenia</Link>
+            <Link href="/onas">O projekcie</Link>
+            <Link href="/#galeria">Galeria</Link>
           </div>
         </div>
 

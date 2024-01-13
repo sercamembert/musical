@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 interface Props {}
 
 const Hero = () => {
@@ -42,16 +43,19 @@ const Hero = () => {
         Jest Misternie Skomponowanym Elementem
         <br className="hidden md:inline" /> Niezapomnianej Opowieści.
       </p>
-
-      <button
-        className="bg-secoundary text-button-text rounded-[3px] xl:rounded-[5px] 3xl:rounded-[9px] h-[30.58px] md:h-[27.73px] lg:h-[36.98px] xl:h-[46.22px] 2xl:h-[52px] 3xl:h-[55px] desktop:h-[62.11px] ultra:h-[92.12px]
-        font-semibold text-[9px] md:text-[9px] lg:text-[12.68px] xl:text-[15.62px] 2xl:text-[18.69px] desktop:text-[20px] ultra:text-[30.32px] px-3 xl:px-6
-        w-[160.54px] md:w-auto md:min-w-[116.3px] lg:min-w-[150.42px] xl:min-w-[191.92px] 2xl:min-w-[221.11px] 3xl:min-w-[224.42px] desktop:min-w-[247.22px] ultra:min-w-[605.9px]
-        mt-[15px] md:mt-[13px] lg:mt-[16px] xl:mt-[21px] 2xl:mt-[24px] desktop:mt-[27px] ultra:mt-[35px] button-animation cursor-pointer z-[2]"
-      >
-        <p className="hidden md:block">Sprawdź nadchodzące wydarzenia</p>
-        <p className="block md:hidden">Dowiedz się więcej</p>
-      </button>
+      <Link href="/wydarzenia" className="z-[2]">
+        <button
+          className="bg-secoundary text-button-text rounded-[5px] xl:rounded-[7px] 3xl:rounded-[9px] 
+          h-[30.58px] md:h-[23.73px] lg:h-[30.98px] xl:h-[37.22px] 2xl:h-[39px] 3xl:h-[41px] desktop:h-[46.11px] ultra:h-[69.23px]
+          font-semibold text-[11px] md:text-[8px] lg:text-[10px] xl:text-[13.62px] desktop:text-[15px] ultra:text-[23px] px-3 xl:px-6
+          mt-[15px] md:mt-[13px] lg:mt-[16px] xl:mt-[21px] 2xl:mt-[24px] desktop:mt-[27px] ultra:mt-[35px] button-animation cursor-pointer z-[2]
+          w-[160.54px] md:w-auto md:min-w-[116.3px] lg:min-w-[150.42px] xl:min-w-[191.92px] 2xl:min-w-[221.11px] 3xl:min-w-[224.42px] desktop:min-w-[247.22px] ultra:min-w-[605.9px]
+          "
+        >
+          <p className="md:hidden">Dowiedz się więcej</p>
+          <p className="hidden md:block">Sprawdź nadchodzące wydarzenia</p>
+        </button>
+      </Link>
     </div>
   );
 };
