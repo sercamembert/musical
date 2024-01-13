@@ -31,6 +31,14 @@ export const getHomeArtists = async () => {
   return response.items;
 };
 
+export const getAllArtists = async () => {
+  const response = await client.getEntries({
+    content_type: "artists",
+  });
+
+  return response.items;
+};
+
 export const getHomeGallery = async () => {
   const response = await client.getEntries({
     content_type: "galeriaHome",
