@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
+      <Head>
+        <title>Złote Głosy Musicalu</title>
+        <meta
+          name="description"
+          content="Wydarzenia artystyczne na wysokim poziomie"
+          key="desc"
+        />
+      </Head>
       <body
         className={
           inter.className +
