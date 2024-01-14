@@ -39,7 +39,7 @@ const page = async ({ params }: { params: { entryId: string } }) => {
           status={event.fields.ticketsStatus}
         />
 
-        <div className="section-space flex flex-col mt-[66px] lg:mt-[87px] xl:mt-[110px] 2xl:mt-[124px] 3xl:mt-[132px] desktop:mt-[148px] ultra:mt-[221px] ">
+        <div className="section-space flex flex-col mt-[80px] md:mt-[100px] xl:mt-[110px] 2xl:mt-[120px] 3xl:mt-[142px] desktop:mt-[178px] ultra:mt-[221px] ">
           <h2 className="event-heading">Artyści którzy wystąpią:</h2>
           <div
             className="mx-auto w-full grid grid-cols-1 md:grid-cols-3 max-w-[250px] md:max-w-full
