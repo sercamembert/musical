@@ -9,6 +9,7 @@ import About from "@/components/About";
 import Artists from "@/components/artists/Artists";
 import Events from "@/components/events/Events";
 import Footer from "@/components/Footer";
+import ImagesHome from "@/components/ImagesHome";
 export default async function Home() {
   const page = await client.getEntry("2bWaTxKFZq5xHHICUol06i");
   const { test, image, media } = page.fields;
@@ -25,6 +26,7 @@ export default async function Home() {
         <Events text="Najbliższe wydarzenia" />
       </div>
       <Gallery />
+      <ImagesHome />
     </main>
   );
 }
