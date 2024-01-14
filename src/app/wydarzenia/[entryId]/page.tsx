@@ -80,7 +80,7 @@ const page = async ({ params }: { params: { entryId: string } }) => {
             <h2 className="text-left event-heading ">Lokalizacja</h2>
             <div className="flex items-center gap-[7px] xl:gap-[10px] 2xl:gap-[12px] desktop:gap-[15px] ultra:gap-[21px]">
               <Image
-                src="/images/icons/phone.svg"
+                src="/images/icons/map.svg"
                 width={30}
                 height={30}
                 alt="Lokalizacja"
@@ -97,7 +97,7 @@ const page = async ({ params }: { params: { entryId: string } }) => {
             </div>
             <div className="flex items-center gap-[7px] xl:gap-[10px] 2xl:gap-[12px] desktop:gap-[15px] ultra:gap-[21px]">
               <Image
-                src="/images/icons/map.svg"
+                src="/images/icons/phone.svg"
                 width={30}
                 height={30}
                 alt="Lokalizacja"
