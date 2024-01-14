@@ -23,6 +23,7 @@ const page = async () => {
         className="w-full grid grid-cols-1 md:grid-cols-3 
         gap-x-[31px] md:gap-x-[27px] lg:gap-x-[35px] xl:gap-x-[44px] desktop:gap-x-[54px] ultra:gap-x-[81px]
         max-w-[300px] md:max-w-full mx-auto
+        gap-y-[30px] lg:gap-y-[60px] xl:gap-y-[80px] 3xl:gap-y-[100px] ultra:gap-y-[160px]
         "
       >
         {events.map((event) => (
