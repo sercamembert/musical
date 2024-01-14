@@ -12,20 +12,15 @@ interface Props {
 
 const page = async ({ params }: { params: { entryId: string } }) => {
   const { entryId } = params;
-  const events = await getEvents();
   const event = await client.getEntry(entryId);
-
+  const url = "https:" + event.fields.image?.fields.file?.url;
   return (
     <>
       <div className=" mt-[100px] xl:mt-[120px] flex flex-col px-[20px] md:px-[130px] lg:px-[225px] xl:px-[285px] 2xl:px-[320px] 3xl:px-[340px] desktop:px-[380px] ultra:px-[420px]">
-        <Image
-          src={"https:" + event.fields.image?.fields.file?.url}
-          alt="Wydarzenie"
-          width={2000}
-          height={2000}
-          quality={100}
-          className="w-full absolute left-0 top-0 opacity-10 z-0 h-[280px] lg:h-[340px] xl:h-[415px] 2xl:h-[447px] 3xl:h-[470.13px] desktop:h-[520.81px] ultra:h-[830.22px]"
-        />
+        <div
+          style={{ backgroundImage: `url(${url})` }}
+          className="bg-center bg-cover w-full absolute left-0 top-0 opacity-10 z-0 h-[280px] lg:h-[340px] xl:h-[415px] 2xl:h-[447px] 3xl:h-[470.13px] desktop:h-[520.81px] ultra:h-[830.22px"
+        ></div>
         <div className="z-10">
           <h1 className="leading-tight text-center font-bold text-[30px] md:text-[37px] lg:text-[49px] xl:text-[61.72px] 2xl:text-[69.43px] 3xl:text-[74.06px] desktop:text-[82.93px] ultra:text-[123.43px]">
             {event.fields.title}
