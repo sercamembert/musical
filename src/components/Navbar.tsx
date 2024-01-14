@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Squash as Hamburger } from "hamburger-react";
 
 const variants = {
@@ -79,7 +80,15 @@ const Navbar = () => {
           isScrolled && "bg-black"
         }`}
       >
-        <a href="/">Logo</a>
+        <a href="/" aria-description="Strona główna">
+          <Image
+            src="/images/logo.svg"
+            alt="Złote Głosy Musicalu"
+            width={318}
+            height={193}
+            className="w-[60px] lg:w-[70px] xl:w-[80px] 2xl:w-[90px] 3xl:w-[106px] ultra:w-[120px]"
+          />
+        </a>
 
         <div className="md:hidden">
           <Hamburger toggled={isOpen} size={17} toggle={setIsOpen} />
