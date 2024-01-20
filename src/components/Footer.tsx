@@ -26,13 +26,13 @@ const Footer = () => {
             <p className="font-bold text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] 2xl:text-[22.39px] desktop:text-[26px] ultra:text-[40px]">
               Kontakt
             </p>
-            <p className="footer-text">Tel.: +48 511 130 650</p>
+            <p className="footer-text">Telefon: +48 511 130 650</p>
             <p className="font-semibold footer-text">
               Kontakt w sprawie biletów grupowych:
             </p>
             <p className="footer-text">bilety@proculture.pl</p>
             <p className="font-semibold footer-text">
-              Współpraca,organizaja wydarzeń,zamówienia
+              Współpraca, organizaja wydarzeń, zamówienia:
             </p>
             <p className="footer-text">biuro@proculture.pl</p>
             <p className="md:hidden opacity-100 footer-text">
