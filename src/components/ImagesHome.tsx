@@ -5,7 +5,7 @@ interface Props {}
 
 const ImagesHome = () => {
   return (
-    <section className="padding">
+    <section className="padding mt-[57px] md:mt-[74px] lg:mt-[104px] xl:mt-[130px] 3xl:mt-[140px] desktop:mt-[160px] ultra:mt-[240px]">
       <div className="container mx-auto flex flex-wrap">
         <div className="flex flex-wrap md:-m-2 -m-1">
           <div className="flex flex-wrap w-1/2">

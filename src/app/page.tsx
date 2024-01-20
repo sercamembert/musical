@@ -25,8 +25,8 @@ export default async function Home() {
       <div className="hidden md:block">
         <Events text="Najbliższe wydarzenia" />
       </div>
-      <Gallery />
       <ImagesHome />
+      <Gallery />
     </main>
   );
 }

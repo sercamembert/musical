@@ -44,6 +44,14 @@ export const getAllArtists = async () => {
   return response.items;
 };
 
+export const getAllMusicians = async () => {
+  const response = await client.getEntries({
+    content_type: "musicians",
+  });
+
+  return response.items;
+};
+
 export const getHomeGallery = async () => {
   const response = await client.getEntries({
     content_type: "galeriaHome",
