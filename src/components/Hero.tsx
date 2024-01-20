@@ -34,14 +34,13 @@ const Hero = () => {
       </p>
       <p
         className="text-center text-[12px] md:text-[10.27px] lg:text-[13.69px] xl:text-[17.11px] 2xl:text-[19.25px] 3xl:text-[20.54px] desktop:text-[23px]
-        mt-[10px] z-[1] ultra:text-[34px] opacity-90
+        mt-[10px] z-[1] ultra:text-[34px] opacity-90 w-full md:w-[456px] lg:w-[608.8px] xl:w-[761px] 2xl:w-[856.13px] 3xl:w-[913.2px] desktop:w-[1022.59px] ultra:w-[70%]
       "
       >
-        Nasze Koncerty w Operach - Sztuka Wzniosła, Dźwięki Niezwykłe: Zanurz
-        Się w Świecie
-        <br className="hidden md:inline" /> Wyjątkowej Muzyki, Gdzie Każdy Ton
-        Jest Misternie Skomponowanym Elementem
-        <br className="hidden md:inline" /> Niezapomnianej Opowieści.
+        To niezapomniane musicalowe hity wszechczasów. W najpiękniejszych
+        polskich operach i filharmoniach usłyszymy Złote Głosy znanych i
+        lubianych artystów scen musicalowych przy akompaniamencie orkiestry
+        znakomitych muzyków.
       </p>
       <Link href="/wydarzenia" className="z-[2]">
         <button
