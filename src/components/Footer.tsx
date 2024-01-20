@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex justify-between padding w-full">
           <div className="w-1/2 md:w-auto flex flex-col gap-[10px] lg:gap-[12px] xl:gap-[15px] 2xl:gap-[17px] 3xl:gap-[18px] desktop:gap-[20px] ultra:gap-[30px]">
             <p className="text-primary font-bold text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] 2xl:text-[22.39px] desktop:text-[26px] ultra:text-[40px]">
-              Adam Kędzierski Proculture
+              Złote Głosy Musicalu
             </p>
             <p className="footer-text">Ul. Sikorskiego 111/314</p>
             <p className="footer-text">66-400 Gorzów Wielkopolski</p>

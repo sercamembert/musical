@@ -15,7 +15,7 @@ const GalleryLink = ({ location, date, entryId }: Props) => {
           ? "/niebylo/"
           : `/gallery/${entryId}`
       }
-      className="flex text-[21px] md:text-[14px] lg:text-[18px] xl:text-[23px] 2xl:text-[24px] 3xl:text-[25px] desktop:text-[29px] ultra:text-[42px]
+      className="flex text-[21px] md:text-[14px] lg:text-[18px] xl:text-[23px] 2xl:text-[24px] 3xl:text-[25px]  ultra:text-[42px]
       gap-[10px] hover:brightness-75 duration-300
       "
     >
