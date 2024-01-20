@@ -15,7 +15,7 @@ const page = async () => {
         </h1>
         <p
           className="text-center text-[11px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px]
-           opacity-70 "
+           opacity-70 w-[80%] mx-auto md:w-full"
         >
           Artyści polskich scen musicalowych zaangażowani w projekt "Złote Głosy
           Musicalu"
