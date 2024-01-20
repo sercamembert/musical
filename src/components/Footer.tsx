@@ -14,23 +14,27 @@ const Footer = () => {
     >
       <div className="w-full h-full flex flex-col md:flex-row  ">
         <div className="flex justify-between padding w-full">
-          <div className="flex flex-col gap-[10px] lg:gap-[12px] xl:gap-[15px] 2xl:gap-[17px] 3xl:gap-[18px] desktop:gap-[20px] ultra:gap-[30px]">
+          <div className="w-1/2 md:w-auto flex flex-col gap-[10px] lg:gap-[12px] xl:gap-[15px] 2xl:gap-[17px] 3xl:gap-[18px] desktop:gap-[20px] ultra:gap-[30px]">
             <p className="text-primary font-bold text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] 2xl:text-[22.39px] desktop:text-[26px] ultra:text-[40px]">
-              Złote Głosy Musicalu
+              Adam Kędzierski Proculture
             </p>
-            <p className="footer-text">
-              Adres: ul. Projektowa 1 <br />
-              99-000 Miasto
-            </p>
-            <p className="footer-text">NIP: 777 999 88 88</p>
-            <p className="footer-text">REGON: 45643137</p>
+            <p className="footer-text">Ul. Sikorskiego 111/314</p>
+            <p className="footer-text">66-400 Gorzów Wielkopolski</p>
+            <p className="footer-text">NIP: 886 291 33 17</p>
           </div>
-          <div className="flex flex-col gap-[10px] lg:gap-[12px] xl:gap-[15px] 2xl:gap-[17px] 3xl:gap-[18px] desktop:gap-[20px] ultra:gap-[30px]">
+          <div className="w-1/2 md:w-auto flex flex-col gap-[10px] lg:gap-[12px] xl:gap-[15px] 2xl:gap-[17px] 3xl:gap-[18px] desktop:gap-[20px] ultra:gap-[30px]">
             <p className="font-bold text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] 2xl:text-[22.39px] desktop:text-[26px] ultra:text-[40px]">
-              KONTAKT
+              Kontakt
             </p>
-            <p className="footer-text">Tel.: 555 666 444</p>
-            <p className="footer-text">Email: contact@firma.com</p>
+            <p className="footer-text">Tel.: +48 511 130 650</p>
+            <p className="font-semibold footer-text">
+              Kontakt w sprawie biletów grupowych:
+            </p>
+            <p className="footer-text">bilety@proculture.pl</p>
+            <p className="font-semibold footer-text">
+              Współpraca,organizaja wydarzeń,zamówienia
+            </p>
+            <p className="footer-text">biuro@proculture.pl</p>
             <p className="md:hidden opacity-100 footer-text">
               Polityka Prywatności
             </p>
