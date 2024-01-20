@@ -7,7 +7,9 @@ const Gallery = async () => {
   return (
     <div
       id="galeria"
-      className="padding section-space flex flex-col relative mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]"
+      className="padding section-space flex flex-col relative mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]
+      pt-[57px] md:pt-[74px] lg:pt-[104px] xl:pt-[130px] 3xl:pt-[140px] desktop:pt-[160px] ultra:pt-[240px]
+      "
     >
       <div>
         <h2 className="section-heading text-left leading-tight">Galeria</h2>
