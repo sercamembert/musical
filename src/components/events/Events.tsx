@@ -33,8 +33,8 @@ const Events = async ({ text }: Props) => {
               path={"https:" + event.fields.image?.fields.file?.url}
               location={event.fields.location}
               subLocation={event.fields.sublocation}
-              date={event.fields.date}
               entryId={event.fields.entryId}
+              data={event.fields.data}
             />
           ))}
         </div>

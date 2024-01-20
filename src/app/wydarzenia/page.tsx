@@ -32,7 +32,7 @@ const page = async () => {
             path={"https:" + event.fields.image?.fields.file?.url}
             location={event.fields.location}
             subLocation={event.fields.sublocation}
-            date={event.fields.date}
+            data={event.fields.data}
             entryId={event.fields.entryId}
           />
         ))}

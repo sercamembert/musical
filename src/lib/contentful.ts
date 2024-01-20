@@ -9,6 +9,8 @@ const getEvents = async () => {
   const response = await client.getEntries({
     content_type: "eventsHome",
     limit: 3,
+    // @ts-expect-error
+    order: "fields.data",
   });
 
   return response.items;
@@ -17,6 +19,9 @@ const getEvents = async () => {
 export const getAllEvents = async () => {
   const response = await client.getEntries({
     content_type: "eventsHome",
+    limit: 3,
+    // @ts-expect-error
+    order: "fields.data",
   });
 
   return response.items;

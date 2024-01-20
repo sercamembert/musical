@@ -1,16 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { format, isValid, parseISO } from "date-fns";
 
 interface Props {
   path: any;
   location: any;
   subLocation: any;
-  date: any;
   entryId: any;
+  data: any;
 }
 
-const ArtistBlock = ({ path, location, subLocation, date, entryId }: Props) => {
+const ArtistBlock = ({ path, location, subLocation, entryId, data }: Props) => {
+  console.log(data);
+  if (!data || !isValid(parseISO(data))) {
+    // Handle the case where data is undefined or not a valid date
+    console.error("Invalid date format:", data);
+    return null; // You may choose to render a placeholder or handle this case differently
+  }
+
+  const parsedDate = parseISO(data);
+
+  const formattedDate = format(parsedDate, "dd.MM.yyyy");
   return (
     <Link
       href={`/wydarzenia/${entryId}`}
@@ -30,7 +41,7 @@ const ArtistBlock = ({ path, location, subLocation, date, entryId }: Props) => {
             {location}
           </h3>
           <p className=" text-[12px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px] opacity-70">
-            {date}
+            {formattedDate}
           </p>
         </div>
 
