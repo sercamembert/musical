@@ -18,6 +18,7 @@ const Footer = () => {
             <p className="text-primary font-bold text-[13px] md:text-[12px] lg:text-[16px] xl:text-[20px] 2xl:text-[22.39px] desktop:text-[26px] ultra:text-[40px]">
               Złote Głosy Musicalu
             </p>
+            <p className="footer-text">Adam Kendzierski Proculture</p>
             <p className="footer-text">Ul. Sikorskiego 111/314</p>
             <p className="footer-text">66-400 Gorzów Wielkopolski</p>
             <p className="footer-text">NIP: 886 291 33 17</p>
