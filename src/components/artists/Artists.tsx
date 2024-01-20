@@ -6,7 +6,7 @@ import Link from "next/link";
 interface Props {}
 
 const Artists = async () => {
-  const artist1 = await client.getEntry("5lkcgEWCO78mCnsOlLWiua");
+  const artist1 = await client.getEntry("4CwC4N50vgnyJi7jJchFGn");
   const artist2 = await client.getEntry("UxQguEdb1kgujQ3KOdYV6");
   const artist3 = await client.getEntry("3dtj9tguiUk97yo612aphK");
   return (
