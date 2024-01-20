@@ -12,13 +12,14 @@ const About = () => {
       <div className="flex flex-col w-full">
         <h2 className="section-heading leading-none">O Projekcie</h2>
         <p className="font-medium text-[12px] md:text-[9.93px] lg:text-[12.97px] xl:text-[16.21px] 3xl:text-[17.83px] desktop:text-[20px] ultra:text-[29px] mt-[10px] opacity-70">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Złote Głosy Musicalu to projekt skupiający najpiękniejsze musicalowe
+          utwory zaśpiewane przez najlepsze głosy polskiej sceny muzycznej.
+          Odtwórcy głównych ról musicalowych wykonają popularne, pełne
+          emocjonalnego ładunku songi z uwielbianych na całym świecie musicali.
+          W muzycznej podróży usłyszymy utwory z najpopularniejszych światowych
+          produkcji takich jak Upiór w Operze, Nędznicy, Mamma Mia, Koty, West
+          Side Story, Moulin Rouge, Miss Saigon, Six, We Will Rock You czy
+          Wicked.
         </p>
         <Link href="/onas">
           <button

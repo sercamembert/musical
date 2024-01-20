@@ -17,7 +17,8 @@ const page = async () => {
           className="text-center text-[11px] md:text-[10px] lg:text-[12px] xl:text-[15.49px] desktop:text-[19px] ultra:text-[28.31px]
            opacity-70 "
         >
-          Excepteur sint occaecat cupidatat
+          Artyści polskich scen musicalowych zaangażowani w projekt "Złote Głosy
+          Musicalu"
         </p>
       </div>
       <div
