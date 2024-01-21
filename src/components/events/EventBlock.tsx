@@ -36,7 +36,7 @@ const ArtistBlock = ({ path, location, subLocation, entryId, data }: Props) => {
         quality={100}
       />
       <div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <h3 className="font-semibold text-[17px] md:text-[14px] lg:text-[18px] xl:text-[23px] 3xl:text-[25px] desktop:text-[28px] ultra:text-[42.67px]">
             {location}
           </h3>
