@@ -11,9 +11,6 @@ import Events from "@/components/events/Events";
 import Footer from "@/components/Footer";
 import ImagesHome from "@/components/ImagesHome";
 export default async function Home() {
-  const page = await client.getEntry("2bWaTxKFZq5xHHICUol06i");
-  const { test, image, media } = page.fields;
-
   return (
     <main className="flex flex-col w-full">
       <Hero />

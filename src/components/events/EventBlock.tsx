@@ -12,11 +12,9 @@ interface Props {
 }
 
 const ArtistBlock = ({ path, location, subLocation, entryId, data }: Props) => {
-  console.log(data);
   if (!data || !isValid(parseISO(data))) {
-    // Handle the case where data is undefined or not a valid date
     console.error("Invalid date format:", data);
-    return null; // You may choose to render a placeholder or handle this case differently
+    return null;
   }
 
   const parsedDate = parseISO(data);

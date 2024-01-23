@@ -19,7 +19,6 @@ const getEvents = async () => {
 export const getAllEvents = async () => {
   const response = await client.getEntries({
     content_type: "eventsHome",
-    limit: 3,
     // @ts-expect-error
     order: "fields.data",
   });
