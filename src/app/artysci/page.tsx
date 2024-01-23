@@ -1,5 +1,4 @@
 import ArtistBlock from "@/components/artists/ArtistBlock";
-import EventBlock from "@/components/events/EventBlock";
 import { getAllArtists, getAllMusicians } from "@/lib/contentful";
 import React from "react";
 

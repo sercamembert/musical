@@ -2,7 +2,7 @@
 import ArtistBlock from "@/components/artists/ArtistBlock";
 import EventTicket from "@/components/events/EventTicket";
 import Events from "@/components/events/Events";
-import getEvents, { client } from "@/lib/contentful";
+import { client } from "@/lib/contentful";
 import Image from "next/image";
 import React from "react";
 

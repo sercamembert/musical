@@ -1,6 +1,6 @@
 import React from "react";
 import ArtistBlock from "./ArtistBlock";
-import { client, getHomeArtists } from "@/lib/contentful";
+import { client } from "@/lib/contentful";
 import Link from "next/link";
 
 interface Props {}
