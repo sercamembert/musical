@@ -17,7 +17,7 @@ export default async function Home() {
       <div className="hidden md:block">
         <Events text="Najbliższe wydarzenia" />
       </div>
-      <ImagesHome />
+      {/* <ImagesHome /> */}
       <Gallery />
     </main>
   );
