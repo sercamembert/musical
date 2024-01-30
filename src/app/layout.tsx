@@ -4,12 +4,12 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
-
+import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Złote Głosy Musicalu",
-  description: "Wydarzenia artystyczne na wysokim poziomie",
+  description: "Koncerty typu musical na najwyższym poziomie",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
         <title>Złote Głosy Musicalu</title>
         <meta
           name="description"
-          content="Wydarzenia artystyczne na wysokim poziomie"
+          content="Koncerty typu musical na najwyższym poziomie"
           key="desc"
         />
       </Head>
@@ -37,6 +37,16 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-433S08GGWQ" />
+      <Script id="google-analytics">
+        {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-433S08GGWQ');
+        `}
+      </Script>
     </html>
   );
 }

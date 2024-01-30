@@ -3,7 +3,10 @@ import { getAllEvents } from "@/lib/contentful";
 import React from "react";
 
 interface Props {}
-
+export const metadata = {
+  title: "Wydarzenia Złote Głosy",
+  description: "Zobacz najbliższe wydarzenia",
+};
 const page = async () => {
   const events = await getAllEvents();
   return (
