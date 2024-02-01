@@ -19,7 +19,16 @@ const Hero = () => {
         height={591.77}
         className="absolute mx-auto my-auto left-0 right-0 -top-3 bottom-0 z-[1] no-blur"
       />
-      <div className="w-full h-full absolute inset-0 bg-[url('/images/hero/background.webp')] bg-center bg-cover blur z-0"></div>
+      <div className="w-full h-full absolute inset-0 z-0">
+        <Image
+          src="/images/hero/background.webp"
+          alt="background"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="blur"
+        />
+      </div>
       <h1
         className="uppercase text-primary font-headingSC leading-none 
         text-[47px] md:text-[62.13px] lg:text-[82.84px] xl:text-[103.55px] 2xl:text-[116.49px] 3xl:text-[124.26px] desktop:text-[139.15px] ultra:text-[206.38px] z-[1]"
