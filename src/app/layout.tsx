@@ -38,6 +38,11 @@ export default function RootLayout({
   gtag('config', 'G-433S08GGWQ');
         `}
       </Script>
+      <Script
+        src="https://assets.usestyle.ai/seonajsplugin"
+        defer
+        id="seona-js-plugin"
+      />
     </html>
   );
 }
