@@ -38,7 +38,3 @@ html {
 .no-blur {
   filter: blur(0px);
 }
-
-.chuj {
-  scroll-snap-align: center;
-}

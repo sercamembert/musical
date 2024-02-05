@@ -1,7 +1,10 @@
 import React from "react";
 
 interface Props {}
-
+export const metadata = {
+  title: "O Projekcie Złote Głosy",
+  description: "Dowiedz się więcej informacji",
+};
 const page = () => {
   return (
     <div className="padding flex flex-col mt-[100px] xl:mt-[120px]">

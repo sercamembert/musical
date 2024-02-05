@@ -69,9 +69,13 @@ const Footer = () => {
         >
           Strona internetowa wykonana przez outofplace.space
         </Link>
-        <p className="hidden md:block opacity-50 font-medium text-center text-[10px] md:text-[8.53px] lg:text-[11.38px] xl:text-[14.22px] 2xl:text-[16px] 3xl:text-[17.07px] desktop:text-[19.11px] ultra:text-[28.35px]">
+        <a
+          href="/statue/statue.pdf"
+          target="_blank"
+          className="hidden md:block opacity-50 font-medium text-center text-[10px] md:text-[8.53px] lg:text-[11.38px] xl:text-[14.22px] 2xl:text-[16px] 3xl:text-[17.07px] desktop:text-[19.11px] ultra:text-[28.35px]"
+        >
           Polityka Prywatności
-        </p>
+        </a>
       </div>
     </div>
   );

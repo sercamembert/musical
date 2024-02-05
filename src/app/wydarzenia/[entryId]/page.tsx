@@ -6,16 +6,17 @@ import { client } from "@/lib/contentful";
 import Image from "next/image";
 import React from "react";
 
-interface Props {
-  entryId: string;
-}
-
 const page = async ({ params }: { params: { entryId: string } }) => {
   const { entryId } = params;
   const event = await client.getEntry(entryId);
   const url = "https:" + event.fields.image?.fields.file?.url;
+
   return (
     <>
+      <head>
+        <title>{event.fields.title}</title>
+        <meta name="description" content={event.fields.location} key="desc" />
+      </head>
       <div className=" mt-[100px] xl:mt-[120px] flex flex-col px-[20px] md:px-[130px] lg:px-[225px] xl:px-[285px] 2xl:px-[320px] 3xl:px-[340px] desktop:px-[380px] ultra:px-[420px]">
         <div
           style={{ backgroundImage: `url(${url})` }}
