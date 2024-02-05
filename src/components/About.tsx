@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 interface Props {}
 
 const About = () => {

@@ -41,6 +41,7 @@ const Navbar = () => {
           onClick={() => {
             setIsOpen(false);
           }}
+          title="Onas"
         >
           O Projekcie
         </Link>
@@ -50,6 +51,7 @@ const Navbar = () => {
           onClick={() => {
             setIsOpen(false);
           }}
+          title="Galeria"
         >
           Galeria
         </Link>
@@ -59,6 +61,7 @@ const Navbar = () => {
           onClick={() => {
             setIsOpen(false);
           }}
+          title="Artysci"
         >
           Artyści
         </Link>
@@ -68,6 +71,7 @@ const Navbar = () => {
           onClick={() => {
             setIsOpen(false);
           }}
+          title="Wydarzenia"
         >
           Wydarzenia
         </Link>
@@ -97,18 +101,21 @@ const Navbar = () => {
         <div className="hidden md:flex items-center">
           <Link
             href="/onas"
+            title="Onas"
             className="font-medium text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] hover:text-primary duration-500 "
           >
             O Projekcie
           </Link>
           <Link
             href="/#galeria"
+            title="Galeria"
             className="font-medium text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] mx-[38px] lg:mx-[49px] xl:mx-[62px] 2xl:mx-[72px] desktop:mx-[85px] hover:text-primary duration-500"
           >
             Galeria
           </Link>
           <Link
             href="/artysci"
+            title="Artysci"
             className="cursor-pointer font-medium text-[7.82px] lg:text-[10px] xl:text-[12.81px] 2xl:text-[14.67px] desktop:text-[17.52px] hover:text-primary duration-500"
           >
             Artyści
@@ -117,6 +124,7 @@ const Navbar = () => {
           <Link
             href="/wydarzenia"
             className="md:ml-[31px] lg:ml-[40px] xl:ml-[57px] 2xl:ml-[60px]"
+            title="Wydarzenia"
           >
             <button
               className="bg-secoundary text-button-text rounded-[5px] xl:rounded-[10px]  h-[24px]  lg:h-[30px]  xl:h-[39.31px]  2xl:h-[45px]  desktop:h-[53px]

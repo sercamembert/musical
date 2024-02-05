@@ -3,7 +3,11 @@ import { getAllArtists, getAllMusicians } from "@/lib/contentful";
 import React from "react";
 
 interface Props {}
-
+export const metadata = {
+  title: "Złote Głosy Musicalu - Koncerty Muzyczne Najwyższej Jakości w Polsce",
+  description:
+    "Doświadcz wyjątkowych występów muzycznych w Polsce z Złotymi Głosami Musicalu. Nie przegap utalentowanych artystów takich jak Zofia Nowakowska i wielu innych.",
+};
 const page = async () => {
   const artists = await getAllArtists();
   const musicians = await getAllMusicians();

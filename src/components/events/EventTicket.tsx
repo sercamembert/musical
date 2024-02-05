@@ -9,7 +9,7 @@ interface Props {
 const EventTicket = ({ path, status }: Props) => {
   return (
     <div className="z-10 flex flex-col gap-[5px] md:gap-[4px] lg:gap-[6px] xl:gap-[7px] 2xl:gap-[8px] ultra:gap-[12px]">
-      <Link href={path} className="mx-auto">
+      <Link href={path} className="mx-auto" target="_blank">
         <button
           className="bg-secoundary text-button-text rounded-[3px] xl:rounded-[5px] 3xl:rounded-[9px] h-[30.58px] md:h-[24px] lg:h-[32px] xl:h-[40px] 3xl:h-[45px] desktop:h-[53px] ultra:h-[80px]
   font-semibold text-[11px] md:text-[8px] lg:text-[10px] xl:text-[13px] 2xl:text-[16px] desktop:text-[18px] ultra:text-[26px] px-3 xl:px-6

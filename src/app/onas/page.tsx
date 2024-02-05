@@ -1,9 +1,11 @@
+import { Metadata } from "next";
 import React from "react";
 
 interface Props {}
-export const metadata = {
-  title: "O Projekcie Złote Głosy",
-  description: "Dowiedz się więcej informacji",
+export const metadata: Metadata = {
+  title: "Złote Głosy Musicalu - Projekt Koncertowy w Polsce - O Nas",
+  description:
+    "Dowiedz się więcej o Złotych Głosach Musicalu, projekcie koncertowym dostarczającym wysokiej jakości występy muzyczne w całej Polsce. Odkryj naszą historię teraz.",
 };
 const page = () => {
   return (

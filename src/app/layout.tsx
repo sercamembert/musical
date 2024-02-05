@@ -7,8 +7,9 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Złote Głosy Musicalu",
-  description: "Koncerty typu musical na najwyższym poziomie",
+  title: "Złote Głosy Musicalu - Koncerty Musicalowe Najwyższej Klasy w Polsce",
+  description:
+    "Ciesz się najwyższej jakości występami muzycznymi w Polsce z Złotymi Głosami Musicalu. Sprawdź nasze nadchodzące wydarzenia w Białymstoku, Łomży i Katowicach.",
 };
 
 export default function RootLayout({
@@ -18,6 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
+      <head>
+        <meta
+          property="og:image"
+          content="https://zloteglosy.pl/images/logo.svg"
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:title"
+          content="Złote Głosy Musicalu - Koncerty Musicalowe Najwyższej Klasy w Polsce"
+        />
+        <meta property="og:url" content="https://zloteglosy.pl/" />
+      </head>
       <body
         className={
           inter.className +

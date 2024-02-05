@@ -5,7 +5,11 @@ import Events from "@/components/events/Events";
 import { client } from "@/lib/contentful";
 import Image from "next/image";
 import React from "react";
-
+export const metadata = {
+  title: "Złote Głosy Musicalu - Koncerty Muzyczne Najwyższej Jakości w Polsce",
+  description:
+    "Doświadcz najwyższej jakości występów muzycznych w Polsce z Złotymi Głosami Musicalu. Dołącz do nas na niezapomnianym koncercie z udziałem utalentowanych artystów.",
+};
 const page = async ({ params }: { params: { entryId: string } }) => {
   const { entryId } = params;
   const event = await client.getEntry(entryId);
@@ -13,10 +17,7 @@ const page = async ({ params }: { params: { entryId: string } }) => {
 
   return (
     <>
-      <head>
-        <title>{event.fields.title}</title>
-        <meta name="description" content={event.fields.location} key="desc" />
-      </head>
+      <head></head>
       <div className=" mt-[100px] xl:mt-[120px] flex flex-col px-[20px] md:px-[130px] lg:px-[225px] xl:px-[285px] 2xl:px-[320px] 3xl:px-[340px] desktop:px-[380px] ultra:px-[420px]">
         <div
           style={{ backgroundImage: `url(${url})` }}

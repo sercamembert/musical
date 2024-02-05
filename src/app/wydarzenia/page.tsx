@@ -4,8 +4,9 @@ import React from "react";
 
 interface Props {}
 export const metadata = {
-  title: "Wydarzenia Złote Głosy",
-  description: "Zobacz najbliższe wydarzenia",
+  title: "Złote Głosy Musicalu | Projekt Koncertowy w Polsce",
+  description:
+    "Odkryj nadchodzące wydarzenia organizowane przez Złote Głosy Musicalu. Znajdź najbliższe występy w Białymstoku, Łomży, Katowicach oraz Bielsku-Białej. Dołącz do nas teraz!",
 };
 const page = async () => {
   const events = await getAllEvents();
